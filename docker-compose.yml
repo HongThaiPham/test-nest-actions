@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  actions_app:
+    container_name: actions_app
+    image: actions_app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
